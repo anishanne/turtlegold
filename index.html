@@ -18,6 +18,7 @@
         <a href="#roadmap">THE ROADMAP</a>
         <a href="#download">DOWNLOAD</a>
         <a href="#specs">SPECS</a>
+        <a href="#price">CURRENT PRICE</a>
         <a href="#story">THE STORY</a>
         <a href="#home">HOME</a>
       </div>
@@ -27,6 +28,7 @@
       <font size=6>
         <hr />
         <h1 id="demo"></h1>
+        
         <hr />
       </font>
     </div>
@@ -45,6 +47,17 @@
 
         Maayan immediately dmed Sniper. And the TurtleGold team was formed. 
         The team forked DEGO, and TurtleGold was born.
+        </p>
+      </div>
+      <div id="price" class="main">
+        <br><br><br>
+        <hr class="hr1">
+        <h1 class="intro-text">
+          Current Price
+        </h1>
+        <hr class="hr1">
+        <p class="body-text">
+          <h1 id="result"></h1>
         </p>
       </div>
       <div id="specs" class="main">
@@ -136,8 +149,8 @@
                 <s>FCB listing</s><br>
                 TradeCX listing<br>
                 <s>CoinCodex Listing<br>
-                Cryptunit Listing<br></s>
-                More exchange listings<br>
+                Cryptunit Listing<br>
+                More exchange listings</s><br>
                 Majority attack resistance<br>
               </p>
             </div>
@@ -189,6 +202,23 @@
 
     typeWriter()
     
+    function getPrice() {
+              var xhr = new XMLHttpRequest(), data;
+
+              xhr.open('GET', 'https://tradecx.io/api/tickers/trtgdoge', false);
+              xhr.send(null);
+
+              try {
+                  data = JSON.parse(xhr.responseText);
+              } catch(e) { data = null }
+
+              return data ? data.ticker.last : 0.0;
+    };
+    function getP(){
+      document.getElementById("result").innerHTML = getPrice()+" Doge"
+    }
+
+    setInterval(getP(), 1000);
     </script>
 
   </body>
