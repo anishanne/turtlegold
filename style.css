@@ -3,10 +3,10 @@
 .intro{
   color: #BFBF51;
   text-align: center;
-  background-color: #333333;
+  background: #333333;
 }
 body{
-  background-color:#333333;
+  background:#333333;
   margin: 0;
   padding: 0px;
   color: white;
@@ -14,7 +14,7 @@ body{
 /*Navbar information*/
 .navbar {
   overflow: hidden;
-  background-color: #333333;
+  background: #333333;
   color: #BFBF51;
   position: fixed;
   top: 0;
@@ -30,7 +30,7 @@ body{
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  background-color: #333333;
+  background: #333333;
 }
 
 .right a:hover {
@@ -145,7 +145,7 @@ ALL THE CODE AFTER THIS POINT IS FOR THE ROADMAP*/
   content: '';
   position: absolute;
   width: 6px;
-  background-color: white;
+  background: white;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -156,7 +156,7 @@ ALL THE CODE AFTER THIS POINT IS FOR THE ROADMAP*/
 .container {
   padding: 10px 40px;
   position: relative;
-  background-color: inherit;
+  background: inherit;
   width: 50%;
 }
 
@@ -167,7 +167,7 @@ ALL THE CODE AFTER THIS POINT IS FOR THE ROADMAP*/
   width: 25px;
   height: 25px;
   right: -17px;
-  background-color: white;
+  background: white;
   border: 4px solid #FF9F55;
   top: 15px;
   border-radius: 50%;
@@ -184,7 +184,7 @@ ALL THE CODE AFTER THIS POINT IS FOR THE ROADMAP*/
   left: 50%;
 }
 
-/* 
+/*
 .left::before {
   content: " ";
   height: 0;
@@ -220,7 +220,7 @@ ALL THE CODE AFTER THIS POINT IS FOR THE ROADMAP*/
 /* The actual content */
 .content {
   padding: 20px 30px;
-  background-color: white;
+  background: white;
   position: relative;
   border-radius: 6px;
 }
@@ -231,14 +231,13 @@ ALL THE CODE AFTER THIS POINT IS FOR THE ROADMAP*/
   .timeline::after {
   left: 31px;
   }
-  
+
   /* Full-width containers */
   .container {
   width: 100%;
-  padding-left: 70px;
-  padding-right: 25px;
+  padding:0 25px 0 70px;
   }
-  
+
   /* Make sure that all arrows are pointing leftwards */
   .container::before {
   left: 60px;
@@ -251,7 +250,7 @@ ALL THE CODE AFTER THIS POINT IS FOR THE ROADMAP*/
   .left::after, .right::after {
   left: 15px;
   }
-  
+
   /* Make all right containers behave like the left ones */
   .right {
   left: 0%;
