@@ -127,10 +127,11 @@
                 GUI wallet<br>
                 <s>FCB listing<br>
                 TradeCX listing<br>
-                CoinCodex Listing<br>
+                 CoinCodex Listing<br>
                 Cryptunit Listing<br></s>
                 More exchange listings<br>
                 Majority attack resistance<br>
+                Halvening<br>
               </p>
             </div>
           </div>
@@ -156,15 +157,6 @@
                 </p>
             </div>
           </div>
-          <div class="container right">
-            <div class="body-text">
-                <h2>2020 Q1</h2>
-                <p>Halvening</p>
-            </div>
-          </div>
-        </div>
-
-
       </div>
     <script>
 var i=0,txt="Introducing TurtleGold",speed=50;function typeWriter(){i<txt.length&&(document.getElementById("demo").innerHTML+=txt.charAt(i),i++,setTimeout(typeWriter,speed))}typeWriter();function getPrice(){var a=new XMLHttpRequest;a.open("GET","https://tradecx.io/api/tickers/trtgdoge",!1);a.send(null);try{var b=JSON.parse(a.responseText)}catch(c){b=null}return b?b.ticker.last:0}function getP(){document.getElementById("result").innerHTML=getPrice()+" Doge"}setInterval(getP(),1E3);
